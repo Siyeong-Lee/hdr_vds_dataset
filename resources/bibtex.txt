@@ -1,6 +1,9 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={Conference},
-  year={20XX}
+@article{lee2018deep,
+  title={Deep chain hdri: Reconstructing a high dynamic range image from a single low dynamic range image},
+  author={Lee, Siyeong and An, Gwon Hwan and Kang, Suk-Ju},
+  journal={IEEE Access},
+  volume={6},
+  pages={49913--49924},
+  year={2018},
+  publisher={IEEE}
 }
