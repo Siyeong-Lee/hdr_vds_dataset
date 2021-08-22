@@ -120,8 +120,8 @@
 <head>
 	<title>Deep Chain HDRI: Reconstructing a High Dynamic Range Image from a Single Low Dynamic Range Image</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
-	<meta property="og:description" content="Paper description." />
+	<meta property="og:title" content="Deep Chain HDRI" />
+	<meta property="og:description" content="Reconstructing a High Dynamic Range Image from a Single Low Dynamic Range Image" />
 
 	<!-- Get from Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -184,7 +184,10 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					Proposed deep chain HDRI architecture. Given an LDR image with a middle exposure value (EV 0), the EV ±1, ±2, ±3 images are inferred sequentially through the network. When the EV of the inferred image is far from the middle exposure value, the structure depth goes deeper than that of the image that has less exposure difference to infer the mapping relation more accurately. After finishing the process through the proposed network, a total of six LDR images are inferred to generate the LDR image stack. Then, an HDR image is generated using the HDRI technique..
+					Proposed deep chain HDRI architecture. Given an LDR image with a middle exposure value (EV 0), the EV ±1, ±2, ±3 images are inferred sequentially through the network. 
+					When the EV of the inferred image is far from the middle exposure value, the structure depth goes deeper than that of the image that has less exposure difference to infer the mapping relation more accurately. 
+					After finishing the process through the proposed network, a total of six LDR images are inferred to generate the LDR image stack. 
+					Using an HDRI synthesis technique (e.g. the method of Debevec and Malik, etc.), an HDR image is generated from the pseudo multi exposure stack.
 				</td>
 			</tr>
 		</table>
@@ -208,7 +211,7 @@
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
+					<td><img class="round" style="width:450px" src="./resources/main_dataset.gif"/></td>
 				</center>
 			</td>
 		</tr>
@@ -217,7 +220,7 @@
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					VDS dataset: the dataset contains 96 scenes that cover a wide variety of content, e.g., natural scenes (both indoor and outdoor), wooded grounds, buildings, etc.
 				</td>
 			</tr>
 		</center>
